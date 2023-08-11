@@ -30,12 +30,13 @@ const text = document.querySelector(".js-text")
 const inputAnswer = document.querySelector(".js-text-input")
 
  const img = document.querySelector(".img")
+ const imgSrc = img.src.slice(21)
  const img1 = document.querySelector(".img1")
 //  const img = document.querySelector(".img")
 //  const img = document.querySelector(".img")
 //  const img = document.querySelector(".img")
 //  const img = document.querySelector(".img")
-console.log(img1)
+console.log(imgSrc)
 
 
 // let timeUser = new Date();
@@ -166,14 +167,14 @@ if(answer == "13.05.2021"){
     text.textContent = "А час пам'ятаєш?"
     input.value = ""
     const instance = basicLightbox.create(`
-<img src=${'/hello.160a79e1.png'} alt="">
+<img src=${imgSrc} alt="">
 
 `)
 instance.show()
     return
 }
 if(answer == "23:54"){
-    firstText.textContent = " Да, я знаю що на скрині був тчас, просто спочатку придумувалися питання, і взагалі це тест на уважність, продовжимо:"
+    firstText.textContent = " Да, я знаю що на скрині був час, просто спочатку придумувалися питання, і взагалі це тест на уважність, продовжимо:"
     text.textContent = "В який день ми вперше погуляли?"
     input.value = ""
     const instance = basicLightbox.create(`
