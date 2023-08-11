@@ -39,6 +39,7 @@ const inputAnswer = document.querySelector(".js-text-input")
 //  const img = document.querySelector(".img")
 //  const img = document.querySelector(".img")
 //  const img = document.querySelector(".img")
+console.log(imgSrc);
 console.log(img1Src)
 console.log(img2Src);
 
@@ -171,7 +172,6 @@ if(answer == "13.05.2021"){
     input.value = ""
     const instance = basicLightbox.create(`
 <img src=${imgSrc} alt="">
-
 `)
 instance.show()
     return
