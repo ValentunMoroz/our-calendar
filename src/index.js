@@ -40,7 +40,7 @@ const inputAnswer = document.querySelector(".js-text-input")
 //  const img = document.querySelector(".img")
 //  const img = document.querySelector(".img")
 console.log(img1Src)
-
+console.log(img2Src);
 
 // let timeUser = new Date();
 // inputAnswer.setAttribute("hidden",true)
