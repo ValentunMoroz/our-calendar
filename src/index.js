@@ -30,13 +30,16 @@ const text = document.querySelector(".js-text")
 const inputAnswer = document.querySelector(".js-text-input")
 
  const img = document.querySelector(".img")
- const imgSrc = img.src.slice(21)
+ const imgSrc = img.src.slice(-18)
  const img1 = document.querySelector(".img1")
+ const img1Src = img1.src.slice(-18)
+ const img2 = document.querySelector(".img2")
+ const img2Src = img2.src.slice(-18)
+
 //  const img = document.querySelector(".img")
 //  const img = document.querySelector(".img")
 //  const img = document.querySelector(".img")
-//  const img = document.querySelector(".img")
-console.log(imgSrc)
+console.log(img1Src)
 
 
 // let timeUser = new Date();
@@ -178,18 +181,18 @@ if(answer == "23:54"){
     text.textContent = "В який день ми вперше погуляли?"
     input.value = ""
     const instance = basicLightbox.create(`
-<img src=${'/date.af42eefe.png'} alt="">
+<img src=${img1Src} alt="">
 
 `)
 instance.show()
     return
 }
-if(answer == "23:56"){
+if(answer == "неділя"){
     firstText.textContent = " Да, я знаю що на скрині був тчас, просто спочатку придумувалися питання, і взагалі це тест на уважність, продовжимо:"
     text.textContent = "В який день ми вперше погуляли?"
     input.value = ""
     const instance = basicLightbox.create(`
-<img src=${'/hello.160a79e1.png'} alt="">
+<img src=${img2Src} alt="">
 
 `)
 instance.show()
