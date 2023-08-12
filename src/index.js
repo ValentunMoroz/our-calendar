@@ -99,9 +99,9 @@ const loveSrc  = imgLove.src.slice(-17)
  const img12 = document.querySelector(".img12")
  const img12Src = img12.src.slice(-17)
  const img13 = document.querySelector(".img13")
- const img13Src = img13.src.slice(-17)
+ const img13Src = img13.src.slice(-16)
  const img14 = document.querySelector(".img14")
- const img14Src = img14.src.slice(-17)
+ const img14Src = img14.src.slice(-16)
  const img15 = document.querySelector(".img15")
  const img15Src = img15.src.slice(-17)
  const img16 = document.querySelector(".img16")
@@ -388,3 +388,4 @@ instance.show()
 // div.appendChild(img9)
 // console.dir(img9);
 // console.dir(new Image(img));
+console.log(img13Src);
