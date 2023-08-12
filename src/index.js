@@ -8,7 +8,22 @@ import 'flatpickr/dist/flatpickr.min.css';
 // import "simplelightbox/dist/simple-lightbox.min.css";
 import * as basicLightbox from 'basiclightbox'
 import "basiclightbox/dist/basicLightbox.min.css"
+                   
 
+
+
+
+const r = {
+    src : "./images/pho1.jpg"  
+}
+
+
+
+
+const body = document.querySelector("body")
+
+
+ const divTimer = document.querySelector(".field")
 const daysDifference = document.querySelector('span[data-days]');
 const hoursDifference = document.querySelector('span[data-hours]');
 const minutesDifference = document.querySelector('span[data-minutes]');
@@ -35,13 +50,82 @@ const inputAnswer = document.querySelector(".js-text-input")
  const img1Src = img1.src.slice(-17)
  const img2 = document.querySelector(".img2")
  const img2Src = img2.src.slice(-17)
+ const img3 = document.querySelector(".img3")
+ const img3Src = img3.src.slice(-17)
+ const img4 = document.querySelector(".img4")
+ const img4Src = img4.src.slice(-17)
 
-//  const img = document.querySelector(".img")
-//  const img = document.querySelector(".img")
-//  const img = document.querySelector(".img")
-console.log(imgSrc);
-console.log(img1Src)
-console.log(img2Src);
+
+
+const imgLove =document.querySelector(".love")
+const loveSrc  = imgLove.src.slice(-17)
+
+
+
+
+
+
+
+
+
+
+
+
+ //  const img = document.querySelector(".img")
+ //  const img = document.querySelector(".img")
+ //  const img = document.querySelector(".img")
+ console.dir(img);
+ console.log(img1Src)
+ console.log(img2Src);
+
+
+
+
+
+ const img5 = document.querySelector(".img5")
+ const img5Src = img5.src.slice(-16)
+ const img6 = document.querySelector(".img6")
+ const img6Src = img6.src.slice(-16)
+ const img7 = document.querySelector(".img7")
+ const img7Src = img7.src.slice(-16)
+ const img8 = document.querySelector(".img8")
+ const img8Src = img8.src.slice(-16)
+ const img9 = document.querySelector(".img9")
+ const img9Src = img9.src.slice(-16)
+ const img10 = document.querySelector(".img10")
+ const img10Src = img10.src.slice(-17)
+ const img11 = document.querySelector(".img11")
+ const img11Src = img11.src.slice(-17)
+ const img12 = document.querySelector(".img12")
+ const img12Src = img12.src.slice(-17)
+ const img13 = document.querySelector(".img13")
+ const img13Src = img13.src.slice(-17)
+ const img14 = document.querySelector(".img14")
+ const img14Src = img14.src.slice(-17)
+ const img15 = document.querySelector(".img15")
+ const img15Src = img15.src.slice(-17)
+ const img16 = document.querySelector(".img16")
+ const img16Src = img16.src.slice(-17)
+ const img17 = document.querySelector(".img17")
+ const img17Src = img17.src.slice(-17)
+ const img18 = document.querySelector(".img18")
+ const img18Src = img18.src.slice(-17)
+ const img19 = document.querySelector(".img19")
+ const img19Src = img19.src.slice(-17)
+ const img21 = document.querySelector(".img21")
+ const img21Src = img21.src.slice(-17)
+ const img22 = document.querySelector(".img21")
+ const img22Src = img22.src.slice(-17)
+ const img23 = document.querySelector(".img22")
+ const img23Src = img23.src.slice(-17)
+
+
+
+
+
+// console.log(img16Src);
+
+ 
 
 // let timeUser = new Date();
 // inputAnswer.setAttribute("hidden",true)
@@ -69,10 +153,19 @@ const options = {
 
 
 
-// function handlerClick() {
+// function () { 
+    const textTwo = `<h1> РАЗОМ ДВА РОКИ</h1>`
     const interval = setInterval(() => {
         let timeUser = new Date();
-        const firstDay = new Date("08.13.2023")
+        let firstDay = new Date("08.13.2023 ")
+        if (Number(firstDay) - Number(timeUser) < 0){
+            clearInterval(interval)
+            //  input.disabled = false
+            body.style.backgroundImage = 'url("https://bogatyr.club/uploads/posts/2021-11/1636945275_1-bogatyr-club-p-krasivii-fon-s-serdechkami-1.jpg")'
+divTimer.innerHTML = textTwo
+
+          return 
+        };
         const { days, hours, minutes, seconds } = convertMs(Number(firstDay) - Number(timeUser));
        
         daysDifference.textContent = addLeadingZero(days);
@@ -82,15 +175,11 @@ const options = {
         
         //   input.disabled = true
         //   startButton.disabled = true;
-        //   if (timeUser - currentDate < 1000){
-            //      clearInterval(interval)
-            //      input.disabled = false
+         
+            }, 
+            1000);
             
-            //     };
-        }, 
-    1000);
-    
-  
+
     function addLeadingZero(value) {
     return value.toString().padStart(2, '0');
   }
@@ -188,11 +277,101 @@ instance.show()
     return
 }
 if(answer == "неділя"){
-    firstText.textContent = " Да, я знаю що на скрині був тчас, просто спочатку придумувалися питання, і взагалі це тест на уважність, продовжимо:"
-    text.textContent = "В який день ми вперше погуляли?"
+    firstText.textContent = "Умнічка "
+    text.textContent = "і як тобі наша прогулянка, сподобалася?"
     input.value = ""
     const instance = basicLightbox.create(`
 <img src=${img2Src} alt="">
+
+`)
+instance.show()
+    return
+}
+if(answer == "так"){
+    firstText.textContent = "Мені теж сподобалося "
+    text.textContent = "яке слово з нашої другої зустрічі я тобі згадую?"
+    input.value = ""
+    const instance = basicLightbox.create(`
+<img src=${'img4Src'} alt="aoto">
+
+`)
+instance.show()
+    return
+}
+if(answer == "одолженіє"){
+    firstText.textContent = "Да,да, я тобі це завжди згадувати буду "
+    text.textContent = "за який смайлік ти зі мною дуже багато сперечалася?"
+    input.value = ""
+    const instance = basicLightbox.create(`
+<img src=${img4Src} alt="aoto" width="500">
+<p class =" text">Бачиш що з одолженія вийшло</p>
+
+`)
+instance.show()
+    return
+}
+// if(answer == "сердечко"){
+//     firstText.textContent = "Да,да, я тобі це завжди згадувати буду "
+//     text.textContent = "за який смайлік ти зі мною дуже багато сперечалася?"
+//     input.value = ""
+//     const instance = basicLightbox.create(`
+// <img src=${img3Src} alt="aoto" >
+
+// `)
+// instance.show()
+//     return
+// }
+if(answer == "сердечко"){
+    firstText.textContent = "Правильно, але ти й сперечалася тоді, Тут мало бути питання про кількість сердечок, але телеграм їх не рахує😅, тому: "
+    text.textContent = "На твою думку скільки разів в переписці зустрічається слово люблю?"
+    input.value = ""
+    const instance = basicLightbox.create(`
+<img src=${img3Src} alt="aoto" >
+
+`)
+instance.show()
+    return
+}
+if(answer > 5700){
+    firstText.textContent = "А ще більше сказано в житті "
+    text.textContent = "Якого слова в переписці більше: кохана чи коханий?"
+    input.value = ""
+    const instance = basicLightbox.create(`
+<img src=${loveSrc} alt="" >
+
+`)
+instance.show()
+    return
+}
+
+if(answer== "коханий"){
+    firstText.textContent = "Практично в два рази, айайай "
+    text.textContent = "А пам'ятаєш чому ти мене вперше назвала котиком?"
+    input.value = ""
+    const instance = basicLightbox.create(`
+<img src=${img23Src} alt="" >
+
+`)
+instance.show()
+    return
+}
+if(answer== "з жалості"){
+    firstText.textContent = "Тоже мені😒 "
+    text.textContent = "А в якому місяці я вперше тобі сказав що люблю тебе?"
+    input.value = ""
+    const instance = basicLightbox.create(`
+<img src=${img13Src} alt="" >
+
+`)
+instance.show()
+    return
+}
+if(answer== "лютий"){
+    firstText.textContent = "Умнічка "
+    text.textContent = "далі буде..."
+    input.value = ""
+    const instance = basicLightbox.create(`
+<img src=${img15Src} alt="" >
 
 `)
 instance.show()
@@ -204,6 +383,8 @@ instance.show()
 
 
 
-// var img = new Image(); // Создаёт новый элемент изображения
-// img.src = "/hello.png"; // Устанавливает путь
-// div.appendChild(img)
+// var img9 = new Image(img); // Создаёт новый элемент изображения
+// img9.src = r.src // Устанавливает путь
+// div.appendChild(img9)
+// console.dir(img9);
+// console.dir(new Image(img));
