@@ -407,7 +407,7 @@ console.log(input.value);
 
 }
 
-
+}
 
 
 
@@ -444,7 +444,7 @@ function randomPhoto(){
         const random = array[getNumber()]
 
 body.style.backgroundImage = `url(${random}),url(${"https://klike.net/uploads/posts/2022-09/1664008578_g-8.jpg"})`
-body.style.backgroundSize = " 400px, 1700px"
+body.style.backgroundSize = " 550px, 1700px"
 body.style.backgroundRepeat = "repeat-x"
 body.style.backgroundPosition = "50% 50%"
     }, 1000)
