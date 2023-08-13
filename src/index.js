@@ -22,7 +22,7 @@ const r = {
 
 const body = document.querySelector("body")
 
-
+const textTwoYears = document.querySelector(".js-timer")
  const divTimer = document.querySelector(".field")
 const daysDifference = document.querySelector('span[data-days]');
 const hoursDifference = document.querySelector('span[data-hours]');
@@ -43,6 +43,15 @@ const div = document.querySelector(".js-container")
 const buttonText = document.querySelector(".js-button-text")
 const text = document.querySelector(".js-text")
 const inputAnswer = document.querySelector(".js-text-input")
+
+
+const textTwo = `<h1> РАЗОМ ДВА РОКИ</h1>`
+
+textTwoYears.innerHTML = textTwo
+
+// 
+
+
 
  const img = document.querySelector(".img")
  const imgSrc = img.src.slice(-18)
@@ -80,105 +89,119 @@ const loveSrc  = imgLove.src.slice(-17)
 
 
 
+ const array = []
 
 
- const img5 = document.querySelector(".img5")
- const img5Src = img5.src.slice(-16)
+
  const img6 = document.querySelector(".img6")
- const img6Src = img6.src.slice(-16)
+ array.push ( img6.src.slice(-16))
  const img7 = document.querySelector(".img7")
- const img7Src = img7.src.slice(-16)
+ array.push(img7.src.slice(-16))
  const img8 = document.querySelector(".img8")
- const img8Src = img8.src.slice(-16)
+ array.push(img8.src.slice(-16))
  const img9 = document.querySelector(".img9")
- const img9Src = img9.src.slice(-16)
+ array.push (img9.src.slice(-16))
  const img10 = document.querySelector(".img10")
- const img10Src = img10.src.slice(-17)
+ array.push(img10.src.slice(-16))
  const img11 = document.querySelector(".img11")
- const img11Src = img11.src.slice(-17)
+ array.push(img11.src.slice(-16))
  const img12 = document.querySelector(".img12")
- const img12Src = img12.src.slice(-17)
+ array.push(img12.src.slice(-16))
  const img13 = document.querySelector(".img13")
+ array.push(img13.src.slice(-16))
  const img13Src = img13.src.slice(-16)
+
  const img14 = document.querySelector(".img14")
- const img14Src = img14.src.slice(-16)
+ array.push(img14.src.slice(-16))
  const img15 = document.querySelector(".img15")
  const img15Src = img15.src.slice(-17)
+ array.push(img15.src.slice(-17))
  const img16 = document.querySelector(".img16")
- const img16Src = img16.src.slice(-17)
+ array.push(img16.src.slice(-17))
  const img17 = document.querySelector(".img17")
- const img17Src = img17.src.slice(-17)
+ array.push(img17.src.slice(-17))
  const img18 = document.querySelector(".img18")
- const img18Src = img18.src.slice(-17)
+ array.push( img18.src.slice(-17))
  const img19 = document.querySelector(".img19")
- const img19Src = img19.src.slice(-17)
+ array.push( img19.src.slice(-17))
  const img21 = document.querySelector(".img21")
- const img21Src = img21.src.slice(-17)
+ array.push(img21.src.slice(-17))
  const img22 = document.querySelector(".img21")
- const img22Src = img22.src.slice(-17)
+ array.push(img22.src.slice(-17))
  const img23 = document.querySelector(".img22")
  const img23Src = img23.src.slice(-17)
+ array.push(img23.src.slice(-17))
+ const img24 = document.querySelector(".img23")
+ array.push(img24.src.slice(-17))
+ const img25 = document.querySelector(".img24")
+ array.push(img25.src.slice(-17))
+ const img26 = document.querySelector(".img26")
+ array.push(img26.src.slice(-17))
+ const img27 = document.querySelector(".img27")
+ array.push(img27.src.slice(-17))
+ const img28 = document.querySelector(".img28")
+ array.push(img28.src.slice(-17))
+ const img29 = document.querySelector(".img29")
+ array.push(img29.src.slice(-17))
+ const img30 = document.querySelector(".img30")
+ array.push(img30.src.slice(-17))
+ const img31 = document.querySelector(".img31")
+ array.push(img31.src.slice(-17))
+ const img32 = document.querySelector(".img32")
+ array.push(img32.src.slice(-17))
 
 
-
-
-
-// console.log(img16Src);
-
- 
-
+ const img34 = document.querySelector(".img34")
+ array.push(img34.src.slice(-17))
+ const img35 = document.querySelector(".img35")
+ array.push(img35.src.slice(-17))
+ const img36 = document.querySelector(".img36")
+ array.push(img36.src.slice(-17))
+ console.log(array);
 // let timeUser = new Date();
 // inputAnswer.setAttribute("hidden",true)
 // buttonText.setAttribute("hidden",true)
 
-const options = {
-  enableTime: true,
-  time_24hr: true,
-  defaultDate: new Date(),
-  minuteIncrement: 1,
-  onClose(selectedDates) {
-    if (selectedDates[0] >= options.defaultDate) {
-        console.log("f");
-        // Notify.failure('Please choose a date in the future');
-        return;
-      }
+// const options = {
+//   enableTime: true,
+//   time_24hr: true,
+//   defaultDate: new Date(),
+//   minuteIncrement: 1,
+//   onClose(selectedDates) {
+//     if (selectedDates[0] >= options.defaultDate) {
+//         console.log("f");
+//         // Notify.failure('Please choose a date in the future');
+//         return;
+//       }
   
-      if (selectedDates[0] > options.defaultDate) {
-        startButton.disabled = false;
-      }
-    },
+//       if (selectedDates[0] > options.defaultDate) {
+//         startButton.disabled = false;
+//       }
+//     },
   
-};
+// };
 // flatpickr();
 
 
 
-// function () { 
-    const textTwo = `<h1> РАЗОМ ДВА РОКИ</h1>`
-    const interval = setInterval(() => {
-        let timeUser = new Date();
-        let firstDay = new Date("08.13.2023 ")
-        if (Number(firstDay) - Number(timeUser) < 0){
-            clearInterval(interval)
-            //  input.disabled = false
-            body.style.backgroundImage = 'url("https://bogatyr.club/uploads/posts/2021-11/1636945275_1-bogatyr-club-p-krasivii-fon-s-serdechkami-1.jpg")'
-divTimer.innerHTML = textTwo
 
-          return 
-        };
-        const { days, hours, minutes, seconds } = convertMs(Number(firstDay) - Number(timeUser));
+  
+// const interval = setInterval(() => {
+//         let timeUser = new Date();
+//         let firstDay = new Date("08.13.2023 ")
+      
+//         const { days, hours, minutes, seconds } = convertMs(Number(firstDay) - Number(timeUser));
        
-        daysDifference.textContent = addLeadingZero(days);
-        hoursDifference.textContent = addLeadingZero(hours);
-        minutesDifference.textContent = addLeadingZero(minutes);
-        secondsDifference.textContent = addLeadingZero(seconds);
+//         // daysDifference.textContent = addLeadingZero(days);
+//         // hoursDifference.textContent = addLeadingZero(hours);
+//         // minutesDifference.textContent = addLeadingZero(minutes);
+//         // secondsDifference.textContent = addLeadingZero(seconds);
         
-        //   input.disabled = true
-        //   startButton.disabled = true;
+//         //   input.disabled = true
+//         //   startButton.disabled = true;
          
-            }, 
-            1000);
-            
+//             }, 
+//             1000);
 
     function addLeadingZero(value) {
     return value.toString().padStart(2, '0');
@@ -195,7 +218,7 @@ divTimer.innerHTML = textTwo
       const days = Math.floor(ms / day);
       // Remaining hours
     const hours = Math.floor((ms % day) / hour);
-    // Remaining minutes
+    //  Remaining minutes
     const minutes = Math.floor(((ms % day) % hour) / minute);
     // Remaining seconds
     const seconds = Math.floor((((ms % day) % hour) % minute) / second);
@@ -344,7 +367,7 @@ instance.show()
     return
 }
 
-if(answer== "коханий"){
+if(answer== "кохана"){
     firstText.textContent = "Практично в два рази, айайай "
     text.textContent = "А пам'ятаєш чому ти мене вперше назвала котиком?"
     input.value = ""
@@ -368,15 +391,20 @@ instance.show()
 }
 if(answer== "лютий"){
     firstText.textContent = "Умнічка "
-    text.textContent = "далі буде..."
+    text.textContent = "хочеш побачити невеличкий сюрприз?"
     input.value = ""
     const instance = basicLightbox.create(`
 <img src=${img15Src} alt="" >
 
 `)
 instance.show()
+buttonText.textContent = "дивитись сюрприз"
     return
 }
+if(answer = "хочу"){
+console.log(input.value);
+    randomPhoto()
+
 }
 
 
@@ -388,4 +416,39 @@ instance.show()
 // div.appendChild(img9)
 // console.dir(img9);
 // console.dir(new Image(img));
-console.log(img13Src);
+// console.log(img13Src);
+
+
+
+
+
+
+
+
+
+
+
+// =========================== РАНДОМНЕ ФОТО =====================
+
+
+function getNumber(){
+    // Math.random()
+ return Math.floor( Math.random()* (28-0) + 0);
+}
+
+
+
+
+function randomPhoto(){
+    setInterval(()=>{
+        const random = array[getNumber()]
+
+body.style.backgroundImage = `url(${random}),url(${"https://klike.net/uploads/posts/2022-09/1664008578_g-8.jpg"})`
+body.style.backgroundSize = " 400px, 1700px"
+body.style.backgroundRepeat = "repeat-x"
+body.style.backgroundPosition = "50% 50%"
+    }, 1000)
+
+}
+
+
