@@ -8,18 +8,14 @@ import 'flatpickr/dist/flatpickr.min.css';
 // import "simplelightbox/dist/simple-lightbox.min.css";
 import * as basicLightbox from 'basiclightbox'
 import "basiclightbox/dist/basicLightbox.min.css"
-                   
+               
 
 
 
 
-const r = {
-    src : "./images/pho1.jpg"  
-}
 
 
-
-
+const arrT = document.querySelectorAll(".test")
 const body = document.querySelector("body")
 
 const textTwoYears = document.querySelector(".js-timer")
@@ -37,7 +33,7 @@ const buttonYes = document.querySelector(".js-yes")
 
 const div = document.querySelector(".js-container")
 
-
+const select = document.querySelector("select")
 
 
 const buttonText = document.querySelector(".js-button-text")
@@ -83,81 +79,50 @@ const loveSrc  = imgLove.src.slice(-17)
  //  const img = document.querySelector(".img")
  //  const img = document.querySelector(".img")
  //  const img = document.querySelector(".img")
- console.dir(img);
- console.log(img1Src)
- console.log(img2Src);
+//  console.dir(img);
+//  console.log(img1Src)
+//  console.log(img2Src);
 
 
 
- const array = []
-
+//  const array = []
 
 
  const img6 = document.querySelector(".img6")
- array.push ( img6.src.slice(-16))
  const img7 = document.querySelector(".img7")
- array.push(img7.src.slice(-16))
  const img8 = document.querySelector(".img8")
- array.push(img8.src.slice(-16))
  const img9 = document.querySelector(".img9")
- array.push (img9.src.slice(-16))
  const img10 = document.querySelector(".img10")
- array.push(img10.src.slice(-16))
  const img11 = document.querySelector(".img11")
- array.push(img11.src.slice(-16))
  const img12 = document.querySelector(".img12")
- array.push(img12.src.slice(-16))
  const img13 = document.querySelector(".img13")
- array.push(img13.src.slice(-16))
  const img13Src = img13.src.slice(-16)
-
+console.log(img13);
  const img14 = document.querySelector(".img14")
- array.push(img14.src.slice(-16))
  const img15 = document.querySelector(".img15")
  const img15Src = img15.src.slice(-17)
- array.push(img15.src.slice(-17))
- const img16 = document.querySelector(".img16")
- array.push(img16.src.slice(-17))
- const img17 = document.querySelector(".img17")
- array.push(img17.src.slice(-17))
- const img18 = document.querySelector(".img18")
- array.push( img18.src.slice(-17))
- const img19 = document.querySelector(".img19")
- array.push( img19.src.slice(-17))
- const img21 = document.querySelector(".img21")
- array.push(img21.src.slice(-17))
- const img22 = document.querySelector(".img21")
- array.push(img22.src.slice(-17))
+//  const img16 = document.querySelector(".img16")
+//  const img17 = document.querySelector(".img17")
+//  const img18 = document.querySelector(".img18")
+//  const img19 = document.querySelector(".img19")
+//  const img21 = document.querySelector(".img21")
+//  const img22 = document.querySelector(".img21")
  const img23 = document.querySelector(".img22")
- const img23Src = img23.src.slice(-17)
- array.push(img23.src.slice(-17))
- const img24 = document.querySelector(".img23")
- array.push(img24.src.slice(-17))
- const img25 = document.querySelector(".img24")
- array.push(img25.src.slice(-17))
- const img26 = document.querySelector(".img26")
- array.push(img26.src.slice(-17))
- const img27 = document.querySelector(".img27")
- array.push(img27.src.slice(-17))
- const img28 = document.querySelector(".img28")
- array.push(img28.src.slice(-17))
- const img29 = document.querySelector(".img29")
- array.push(img29.src.slice(-17))
- const img30 = document.querySelector(".img30")
- array.push(img30.src.slice(-17))
- const img31 = document.querySelector(".img31")
- array.push(img31.src.slice(-17))
- const img32 = document.querySelector(".img32")
- array.push(img32.src.slice(-17))
+ const img23Src = img23.src.slice(-12)
+//  const img24 = document.querySelector(".img23")
+//  const img25 = document.querySelector(".img24")
+//  const img26 = document.querySelector(".img26")
+//  const img27 = document.querySelector(".img27")
+//  const img28 = document.querySelector(".img28")
+//  const img29 = document.querySelector(".img29")
+//  const img30 = document.querySelector(".img30")
+//  const img31 = document.querySelector(".img31")
+//  const img32 = document.querySelector(".img32")
 
 
  const img34 = document.querySelector(".img34")
- array.push(img34.src.slice(-17))
  const img35 = document.querySelector(".img35")
- array.push(img35.src.slice(-17))
  const img36 = document.querySelector(".img36")
- array.push(img36.src.slice(-17))
- console.log(array);
 // let timeUser = new Date();
 // inputAnswer.setAttribute("hidden",true)
 // buttonText.setAttribute("hidden",true)
@@ -230,7 +195,7 @@ const loveSrc  = imgLove.src.slice(-17)
 // const firstDay = new Date("05.13.2021")
 
 input.addEventListener("input", hadlerInpup)
-button.addEventListener("click", handlerClick)
+// button.addEventListener("click", handlerClick)
 
 let num
 function hadlerInpup(evt){
@@ -239,27 +204,31 @@ function hadlerInpup(evt){
 }
 
 
-function handlerClick(evt){
-    console.log(num);
-    // console.log(Number(num) === 2);
-    if(num === "13.05.2021"){
-        console.log("перше привіт");
-    }else if(num ){
-console.log("object");
-    }
-}
+// function handlerClick(evt){
+//     console.log(num);
+//     // console.log(Number(num) === 2);
+//     if(num === "13.05.2021"){
+//         console.log("перше привіт");
+//     }else if(num ){
+// console.log("object");
+//     }
+// }
 
 // ========================== перший текст ====================
 
 buttonYes.addEventListener("click", handlerClickYes)
 
 function handlerClickYes(evt){
-   buttonYes.setAttribute("hidden",true)
+    if(option == +18){
+        firstText.textContent ="Скоро..."
+        return
+    }
+//    buttonYes.setAttribute("hidden",true)
    inputAnswer.removeAttribute("hidden")
    buttonText.removeAttribute("hidden")
     firstText.textContent ="Почнемо з легкого:"
     text.textContent = "Дата нашого знайомства?"
-    buttonYes.remove()
+    // buttonYes.remove()
 }
 
 
@@ -277,7 +246,10 @@ function hadlerAnswer(evt) {
 
 
 
-function hadlerClickText(evt) {
+function hadlerClickText() {
+    if(select.value == +18){
+        console.log('object');
+    }
 if(answer == "13.05.2021"){
     firstText.textContent ="Молодець:"
     text.textContent = "А час пам'ятаєш?"
@@ -401,8 +373,7 @@ instance.show()
 buttonText.textContent = "дивитись сюрприз"
     return
 }
-if(answer = "хочу"){
-console.log(input.value);
+if(answer == "хочу"){
     randomPhoto()
 
 }
@@ -419,12 +390,12 @@ console.log(input.value);
 // console.log(img13Src);
 
 
+// const tu = document.createElement("img")
 
+// tu.src = "/images/time.png"
+// div.insertAdjacentElement("beforeend",tu)
 
-
-
-
-
+// console.log(tu);
 
 
 
@@ -439,16 +410,31 @@ function getNumber(){
 
 
 
+// const random = array[getNumber()]
 function randomPhoto(){
     setInterval(()=>{
-        const random = array[getNumber()]
-
-body.style.backgroundImage = `url(${random}),url(${"https://klike.net/uploads/posts/2022-09/1664008578_g-8.jpg"})`
-body.style.backgroundSize = " 550px, 1700px"
-body.style.backgroundRepeat = "repeat-x"
-body.style.backgroundPosition = "50% 50%"
+        const random = getNumber()
+        
+        body.style.backgroundImage = `url(${arrT[random].src}),url(${"https://klike.net/uploads/posts/2022-09/1664008578_g-8.jpg"})`
+        body.style.backgroundSize = " 480px, 1700px"
+        body.style.backgroundRepeat = "repeat-x"
+        body.style.backgroundPosition = "50% 50%"
     }, 1000)
+    
+}
 
+
+
+
+
+
+
+select.addEventListener("blur",hadlerSelect)
+let option
+function hadlerSelect(evt){
+   
+option=evt.target.value
+console.dir(option);
 }
 
 
