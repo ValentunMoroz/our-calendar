@@ -43,16 +43,16 @@
   transform: translateZ(-105px) scale(1.06);
 }
 .layer2{
-  transform: translateZ(65px);
+  transform: translateZ(65px) scale(.88);
   width: 45px;
   height: 45px;
   top: 500px;
   left: 333px;
 }
 .layer3{
-  top: 500px;
-  left: 333px;
-  transform: translateZ(105px);
+  top: 2%;
+  left: 5%;
+  transform: translateZ(115px) scale(.95);
 }
 
   
@@ -62,17 +62,22 @@
   }
   .timer {
     top: 5%;
-    left: 7%;
-    transform: translateZ(105px);
+    left: 3%;
+    transform: translateZ(105px) scale(.92);
     display: flex;
     gap: 10px;
   }
 .container-text{
-  top: 15%;
-  left: 8%;
-  transform: translateZ(125px);
+  top: 12%;
+  left: 2%;
+  transform: translateZ(125px) scale(.88);
 }
-
+.text-about-us{
+  font-size: 40px;
+}
+.text-for-answer{
+max-width: 700px;
+}
   .field{
     display: flex;
     gap: 10px;
