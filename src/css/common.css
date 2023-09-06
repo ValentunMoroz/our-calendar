@@ -95,3 +95,104 @@ max-width: 700px;
   /* background-size: 1700px; */
   
  /* } */ 
+
+
+
+ /* ===================== CUBE ========================= */
+
+
+
+ .cube{
+  position: relative;
+  perspective: 1200px;
+  height: 360px;
+  width: 360px;
+  padding-top: 200px;
+  margin: auto;
+ }
+ .cube__container{
+  transform-style: preserve-3d;
+  
+  height: inherit;
+  width: inherit;
+ }
+ .cube__item{
+/* backface-visibility: hidden; */
+
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  border: 3px solid #fff;
+  text-align: center;
+ 
+ }
+ .cube__item span{
+  cursor: pointer;
+ }
+ .front{
+  background-image: url("../images/cube1.jpg");
+  background-size: cover;
+  transform: translateZ(180px);
+ }
+
+ .back{
+  background-image: url("../images/cube2.jpg");
+  background-size: cover;
+  transform: rotateY(180deg) translateZ(180px);
+ }
+ .right{
+  background-image: url("../images/cube3.jpg");
+  background-size: cover;
+  transform: rotateY(90deg) translateZ(180px);
+ }
+ .left{
+  background-image: url("../images/cube4.jpg");
+  background-size: cover;
+  transform: rotateY(-90deg) translateZ(180px);
+ }
+ .top{
+  background-image: url("../images/cube5.jpg");
+  background-size: cover;
+  transform: rotateX(90deg) translateZ(180px);
+ }
+ .bottom {
+  background-image: url("../images/cube6.jpg");
+  background-size: cover;
+  transform: rotateX(-90deg) translateZ(180px);
+ }
+
+main{
+  
+  background-image: url("https://i.ytimg.com/vi/KURW3vOo6uA/maxresdefault.jpg");
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  /* transform: scale(.88); */
+  /* background-position: center; */
+  inset: -10vh;
+
+}
+/*  =========================  CUBE NEW STYLES ================= */
+
+.cube-n{
+  width: 100%;
+  /* height: 100vh; */
+  height: max-content;
+  padding-top: 20px;
+ display: flex;
+ justify-content: center;
+}
+
+.cube__container-n{
+  display: flex;
+ max-width: 1200px;
+ height: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.cube__item-n{
+  width: 350px;
+  height: 350px;
+  transform: none;
+  position:relative;
+}
