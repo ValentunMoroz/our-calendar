@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://ValentunMoroz.github.io/our-calendar",
+  "homepage": "https://ValentunMoroz.github.io/love__story",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /our-calendar/"
+    "build": "parcel build src/*.html --public-url /love__story/"
   },
   "repository": {
     "type": "git",
